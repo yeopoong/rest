@@ -29,7 +29,7 @@ public class BookController {
 
 	@Autowired
 	BookService bookService;
-
+	
 //	@RequestMapping(method = RequestMethod.GET)
 //	@ResponseBody
 //	public List<Book> getBooks() {
@@ -66,6 +66,7 @@ public class BookController {
 
 		Resources<BookResource> wrapped = new Resources<BookResource>(resources, 
 				linkTo(BookController.class).withSelfRel());
+		
 		return wrapped;
 	}
 	

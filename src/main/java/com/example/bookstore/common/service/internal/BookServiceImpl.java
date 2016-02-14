@@ -24,6 +24,12 @@ public class BookServiceImpl implements BookService {
 	}
 
 	@Override
+//	@Scheduled(cron="0 */1 * * * ?")
+	public void getScheduledBooks() {
+		bookMapper.select();
+	}
+
+	@Override
 	public Book getBook(Long id) {
 		return bookMapper.selectByPrimaryKey(id);
 	}

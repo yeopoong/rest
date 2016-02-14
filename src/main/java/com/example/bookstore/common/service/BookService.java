@@ -13,6 +13,8 @@ public interface BookService {
 	 */
 	List<Book> getBooks();
 	
+	void getScheduledBooks(); 
+	
 	/**
 	 * 도서 상세 정보를 조회한다.
 	 *  
